@@ -9,9 +9,13 @@ Allows users to input various time filters to easily retrieve data from a specif
 2. Open terminal and navigate to folder with bikeshare.py file.
 3. Run `python bikeshare.py`
 4. Answer the two questions to filter the data you want to explore.
- 
+
 ### Files used
 Data set
 1. chicago.csv
 2. new_york_city.csv
 3. washington.csv
+
+### Credits
+Thank you to the Udacity team. Learned everything I used in this project from the Programming for Data Science Nano Degree.
+Link to the course: https://www.udacity.com/course/programming-for-data-science-nanodegree--nd104
