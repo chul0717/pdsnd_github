@@ -25,9 +25,9 @@ def get_filters():
             if city in CITY_DATA.keys():
                 break
             else:
-                print('\nInput Error: Please choose between Chicago, New York City, or Washington.\n')
+                print('\n*** Input Error: Please choose between Chicago, New York City, or Washington.\n')
         except:
-            print('\nInput Error: Please choose between Chicago, New York City, or Washington.\n')
+            print('\n*** Input Error: Please choose between Chicago, New York City, or Washington.\n')
 
     while True:
         try:
@@ -41,9 +41,9 @@ def get_filters():
                         if month in ['january', 'february', 'march', 'april', 'may', 'june']:
                             break
                         else:
-                            print('\nInput Error: Please choose between January, February, March, April, May or June.\n')
+                            print('\n*** Input Error: Please choose between January, February, March, April, May or June.\n')
                     except:
-                        print('\nInput Error: Please choose between January, February, March, April, May or June.\n')
+                        print('\n*** Input Error: Please choose between January, February, March, April, May or June.\n')
                 break
             elif filter == 'day':
                 month = 'none'
@@ -54,18 +54,18 @@ def get_filters():
                         if day in ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']:
                             break
                         else:
-                            print('\nInput Error: Please choose between Monday, Tuesday, Wednesday, Thursday, Friday, Saturday and Sunday\n')
+                            print('\n*** Input Error: Please choose between Monday, Tuesday, Wednesday, Thursday, Friday, Saturday and Sunday\n')
                     except:
-                        print('\nInput Error: Please choose between Monday, Tuesday, Wednesday, Thursday, Friday, Saturday and Sunday\n')
+                        print('\n*** Input Error: Please choose between Monday, Tuesday, Wednesday, Thursday, Friday, Saturday and Sunday\n')
                 break
             elif filter == 'none':
                 month = 'none'
                 day = 'none'
                 break
             else:
-                print('\nInput Error: Please choose between month, day, or none\n')
+                print('\n*** Input Error: Please choose between month, day, or none\n')
         except:
-            print('\nInput Error: Please choose between month, day, or none\n')
+            print('\n*** Input Error: Please choose between month, day, or none\n')
 
 
     print('-'*40)
@@ -206,7 +206,7 @@ def raw_data(df):
                 if next != 'yes':
                     return
         except:
-            print("Error: invalid input please try again.\n ")
+            print("*** Input Error: invalid input please try again.\n ")
 
 
 
